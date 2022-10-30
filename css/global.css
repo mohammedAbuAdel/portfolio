@@ -1,0 +1,94 @@
+/* start variabel 1111*/
+:root {
+  --scroll-color1: white;
+  --scroll-color2: black;
+}
+/* end variabel */
+
+/* start global style 2222*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  height: 5000px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+/* end global style */
+
+/* start scrollbar =----*/
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(
+    90deg,
+    var(--scroll-color1),
+    var(--scroll-color2),
+    var(--scroll-color1)
+  );
+  box-shadow: 0px 0px 5px inset rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    90deg,
+    var(--scroll-color2),
+    var(--scroll-color1),
+    var(--scroll-color2)
+  );
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-button {
+  background-image: linear-gradient(
+    90deg,
+    var(--scroll-color2),
+    var(--scroll-color1),
+    var(--scroll-color2)
+  );
+  border-radius: 50%;
+}
+/* end scrollbar */
+.toTop {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border: solid 3px white;
+  position: fixed;
+  bottom: 30px;
+  right: -60px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.toTop .icon-toTop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -65%);
+  width: 20px;
+  height: 20px;
+  font-size: 30px;
+  color: white;
+}
+.toTop .icon-toTop i{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(50%);
+  width: 3px;
+  height: 15px;
+  background-color: white;
+}
