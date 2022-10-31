@@ -13,7 +13,6 @@
 body {
   font-family: sans-serif;
   scroll-behavior: smooth;
-  height: 5000px;
 }
 
 ul {
@@ -26,7 +25,32 @@ a {
   text-decoration: none;
 }
 /* end global style */
-
+/* start container */
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media(min-width:576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media(min-width:768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media(min-width:992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media(min-width:1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* end container */
 /* start scrollbar =----*/
 ::-webkit-scrollbar {
   width: 13px;
@@ -72,6 +96,24 @@ a {
   right: -60px;
   border-radius: 50%;
   transition: 0.5s;
+  z-index: 5000;
+}
+.toTop .i1{
+border: solid 15px transparent;
+border-bottom-color: white;
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.toTop .i2{
+width: 6px;
+height: 15px;
+background-color: white;
+position: absolute;
+top: 25px;
+left: 50%;
+transform: translateX(-50%);
 }
 .toTop .icon-toTop {
   position: absolute;

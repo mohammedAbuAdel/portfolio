@@ -1,44 +1,166 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- global css -->
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- header-sticky css -->
+    <link rel="stylesheet" href="css/header-sticky.css" />
+    <!-- footer-sticky css -->
+    <link rel="stylesheet" href="css/frame-footers.css" />
+    <!-- master css -->
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body id="toTop">
+    <a href="#toTop" class="toTop">
+      <i class="i1"></i>
+      <i class="i2"></i>
+    </a>
 
-  <!-- normalize css --> <link rel="stylesheet" href="css/normalize.css">
-  
-  <!-- global css --> <link rel="stylesheet" href="css/global.css">
-  <!-- header-sticky css --> <link rel="stylesheet" href="css/header-sticky.css">
-  <!-- master css --> <link rel="stylesheet" href="css/master.css">
-</head>
-<body id="toTop">
-  <a href="#toTop" class="toTop">
-    <i id="icon-toTop"><i></i></i>
-</a>
-
-      <!-- start header -->
-      <div class="header">
+    <!-- start header -->
+    <div class="header">
+      <div class="container">
         <div class="log"><a href="index.html">mohamed</a></div>
+
         <div class="nav">
-            <a href="#about" class="about">about</a>
-            <a href="#our-work" class="our-work">out work</a>
-            <a href="#skills" class="skills">skills</a>
-            <a href="#footer" class="footer">footer</a>
+          <a href="#about" class="nav-about">about</a>
+          <a href="#our-work" class="nav-our-work">out work</a>
+          <a href="#skills" class="nav-skills">skills</a>
+          <a href="#footer" class="nav-footer">footer</a>
         </div>
-        <span class="open"><i></i></span>
-        <span class="close"></span>
+
+        <div class="icon">
+          <img src="images/download.jpg" alt="" />
+        </div>
       </div>
-      <!-- end header -->
+    </div>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="text">
+          <h2>welcome to evrybody</h2>
+          <p>
+            this portfolio me i am mohamed adeel i be front end developer and
+            back end developer
+          </p>
+        </div>
+        <img src="images/images.jpg" alt="" />
+      </div>
+    </div>
+    <!-- end landing -->
+    <!-- start about -->
+    <div class="about" id="about">
+      <div class="title">
+        <h2>about</h2>
+      </div>
+      <div class="container">
+        <img src="images/images.jpg" alt="" />
+        <div class="text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ipsam
+            expedita quos assumenda deleniti vel harum maiores, officia maxime,
+            dolore, dolorum quidem adipisci iure odit ipsa? Odit pariatur
+            doloribus sint?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    <!-- start our work -->
+    <div class="our-work" id="our-work">
+      <div class="title">
+        <h2>our work</h2>
+      </div>
+      <div class="container">
+        <div class="box">
+          <img src="images/images.jpg" alt="" />
+          <h3>project1</h3>
+          <p>this portfolio page</p>
+        </div>
+        <div class="box">
+          <img src="images/images.jpg" alt="" />
+          <h3>project1</h3>
+          <p>this portfolio page</p>
+        </div>
+        <div class="box">
+          <img src="images/images.jpg" alt="" />
+          <h3>project1</h3>
+          <p>this portfolio page</p>
+        </div>
+        <div class="box">
+          <img src="images/images.jpg" alt="" />
+          <h3>project1</h3>
+          <p>this portfolio page</p>
+        </div>
+      </div>
+    </div>
+    <!-- end our work -->
+    <!-- start our skills -->
+    <div class="skills">
+      <div class="container">
+        <h2>skills</h2>
+        <div class="skill-box">
+          <div class="skill-name">HTML</div>
+          <div class="skill-progress">
+            <span data-progress="100%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">css</div>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">javascript</div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">bootstarab</div>
+          <div class="skill-progress">
+            <span data-progress="80%"></span>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-name">react</div>
+          <div class="skill-progress">
+            <span data-progress="70%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end our skills -->
 
+    <!-- start footer -->
+    <div class="footer" id="footer">
+      <p>Designed and developed by <span>Mohamed Adel</span></p>
+      <div class="Social-Media">
+        <div class="link facebock">
+          <i class="fa-brands fa-facebook"></i>
+          <a href="" target="_blank">facebock</a>
+        </div>
+        <div class="link facebock">
+          <i class="fa-brands fa-facebook"></i>
+          <a href="https://github.com/mohammedAbuAdel" target="_blank">githup</a>
+        </div>
 
+      </div>
+    </div>
+    <!-- end footer -->
 
-
-
-
-
-
-    <!-- master --> <script src="js/global.js"></script>
-    <!-- header-sticky --> <script src="js/header-sticky.js"></script>
-    <!-- master --> <script src="js/master.js"></script>
-</body>
+    <!-- master -->
+    <script src="js/global.js"></script>
+    <!-- header-sticky -->
+    <script src="js/header-sticky.js"></script>
+    <!-- master -->
+    <script src="js/master.js"></script>
+  </body>
 </html>

@@ -1,0 +1,249 @@
+/* root */
+:root {
+    --main-color:white;
+    --altrnat-color:black;
+}
+/* root */
+/* start landing */
+.landing {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('../images/download.jpg');
+    z-index: -2;
+    transform: skewy(6deg) rotatex(30deg);
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #0000005e; 
+    border-top: solid black; border-bottom: solid black;
+    
+}
+.landing .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.landing .text{
+    width: 60%;
+    height: 50%;
+    padding: 150px 0 0;
+}
+.landing h2{
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+.landing p{
+
+    font-size: 1.4rem;
+    color: #e7e7e7;
+
+}
+.landing img{
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    animation-name: landing-img;
+    animation-duration: 1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+}
+/* animation */
+@keyframes landing-img{
+    0% {
+        margin-top: -60px;
+    }
+    100% {
+        margin-top: 60px;
+    }
+}
+/* animation */
+/* media */
+@media(max-width:992px) {
+    .landing {
+        transform: skewy(4deg);
+
+    }
+    .landing .text{
+        width: 100%;
+        height: 50%;
+        padding: 100px 0 0;
+    }
+    .landing h2{
+        font-size: 2rem;
+        margin: 0;
+        color: white;
+    }
+    .landing p{
+    
+        font-size: 1.2rem;
+        color: #e7e7e7;
+    
+    }
+    .landing img{
+        display: none;
+    }
+}
+/* media */
+/* end landing */
+/* start about */
+.about {
+    width: 100%;
+    height: 100vh;
+    margin: 150px 0;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.about .title{
+text-align: center;
+font-size: 2rem;
+margin: 0;
+}
+.about img{
+width: 50%;
+height: 70%;
+}
+.about .text{
+width: 50%;
+min-height: 70%;
+background-color: #eee;
+
+}
+.about .text p{
+
+padding: 15px;
+font-size: 1.4rem;
+text-shadow: 0 0 4px;
+color: #000000;
+line-height: 1.7;
+margin: 0;
+padding: 15px 0;
+}
+/* media */
+@media(max-width:992px) {
+
+    .about .container{
+        flex-direction: column;
+    }
+    .about .text{
+        width: 100%;
+        min-height: 40%;
+    }
+    .about img{
+        width: 100%;
+        height: 50%;
+    }
+}
+/* media */
+/* end about */
+/* start our-work */
+.our-work {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+.our-work .title{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+.our-work .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: 15px;
+    
+}
+.our-work .box{
+    width: 100%;
+    
+}
+.our-work .box img{
+    width: 100%;
+    
+}
+.our-work .box{
+    width: 100%;
+    background-color: #eee;
+    
+}
+.our-work .box h3{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 10px;
+    
+}
+.our-work .box p{
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 10px;
+    color: #6d6d6d ;
+}
+/* media */
+@media(max-width:992px) {
+    .our-work .box {
+        text-align: center;
+    }
+}
+/* media */
+/* end our-work */
+/* start our skills */
+.skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #eee;
+  }
+  
+  .skills h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--color-main);
+    margin: 0 0 50px;
+    text-align: center;
+  }
+  
+  .skills .skill-box {
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .skills .skill-box .skill-name {
+    font-weight: bold;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills .skill-box .skill-progress {
+    width: calc(100% - 110px);
+    margin-right: 10px;
+    height: 30px;
+    background-color: #f6f6f6;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skills .skill-box .skill-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--altrnat-color);
+    transition: .7s;
+  }
+  
+  /* end our skills */
