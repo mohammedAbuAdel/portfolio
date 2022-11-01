@@ -140,6 +140,8 @@ padding: 15px 0;
     .about .text{
         width: 100%;
         min-height: 40%;
+        padding: 0;
+        text-align: center;
     }
     .about img{
         width: 100%;
@@ -153,6 +155,7 @@ padding: 15px 0;
     width: 100%;
     min-height: 100vh;
     padding: 50px 0;
+    background-color: #eee;
 }
 .our-work .title{
     text-align: center;
@@ -165,9 +168,6 @@ padding: 15px 0;
     gap: 15px;
     
 }
-.our-work .box:hover{
-    transform: scale(1.1);
-}
 .our-work .box img{
     width: 100%;
     
@@ -175,12 +175,25 @@ padding: 15px 0;
 .our-work .box{
     width: 100%;
     background-color: #eee;
-    transition: .3s;
+    transition-duration: 0.7s;
+    min-height: 400px;
+    position: relative;
+    box-shadow: 0 0 3px 0px black;
 }
-.our-work .box:hover{
-    transform: scale(1.1);
-    background-color: #ddd;
+.our-work .box::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 0;
+    background-color: black;
 
+}
+
+.our-work .box:hover::before {
+    width: 100%;
+    transform: scale(1.1);
 }
 .our-work .box h3{
     font-size: 1.6rem;
@@ -198,6 +211,12 @@ padding: 15px 0;
 @media(max-width:992px) {
     .our-work .box {
         text-align: center;
+        margin-bottom: 40px;
+    }
+    .our-work .box img{
+        height: 70%;
+        margin: 10px;
+        
     }
 }
 /* media */
