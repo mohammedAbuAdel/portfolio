@@ -1,6 +1,6 @@
 
 :root {
-    --master-color:white;
+    --master-color:black;
     --altrnat1-color:#9e9e9e;
 }
 a {
@@ -27,7 +27,7 @@ a {
     align-items: center;
     position: relative;
     height: 60px;
-    background-color: #070707ab;
+    background-color: #c8c8c8ab;
 }
 
 .header .log {
@@ -43,7 +43,7 @@ a {
     padding-right: 10px;
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--master-color);
+    color: white;
 }
 .header .nav {
     display: flex;
@@ -91,7 +91,7 @@ width: 100%;
         left: 0;
         flex-direction: column;
         min-height: calc(40vh - 60px);
-        background-color: #070707ab;
+        background-color: var(--altrnat1-color);
         justify-content: flex-start;
     } 
     .header .open{

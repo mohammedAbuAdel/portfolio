@@ -3,13 +3,16 @@
     --main-color:white;
     --altrnat-color:black;
 }
+body {
+    scroll-behavior: smooth;
+}
 /* root */
 /* start landing */
 .landing {
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url('../images/download.jpg');
+    background-image: url('../images/background.jpg');
     z-index: -2;
     transform: skewy(6deg) rotatex(30deg);
 }
@@ -97,7 +100,6 @@
 .about {
     width: 100%;
     height: 100vh;
-    margin: 150px 0;
 }
 .about .container{
     display: flex;
@@ -107,23 +109,23 @@
 .about .title{
 text-align: center;
 font-size: 2rem;
-margin: 0;
+}
+.about .title h2{
+    margin: 100px 0 0;
 }
 .about img{
-width: 50%;
-height: 70%;
+    width: 40%; height: 50%;
 }
 .about .text{
-width: 50%;
-min-height: 70%;
-background-color: #eee;
+    width: 60%;
+    min-height: 50%;
+    padding: 150px 0 0 70px;
 
 }
 .about .text p{
 
 padding: 15px;
 font-size: 1.4rem;
-text-shadow: 0 0 4px;
 color: #000000;
 line-height: 1.7;
 margin: 0;
@@ -163,9 +165,8 @@ padding: 15px 0;
     gap: 15px;
     
 }
-.our-work .box{
-    width: 100%;
-    
+.our-work .box:hover{
+    transform: scale(1.1);
 }
 .our-work .box img{
     width: 100%;
@@ -174,7 +175,12 @@ padding: 15px 0;
 .our-work .box{
     width: 100%;
     background-color: #eee;
-    
+    transition: .3s;
+}
+.our-work .box:hover{
+    transform: scale(1.1);
+    background-color: #ddd;
+
 }
 .our-work .box h3{
     font-size: 1.6rem;
