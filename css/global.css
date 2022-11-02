@@ -92,10 +92,10 @@ a {
   background-color: black;
   border: solid 3px white;
   position: fixed;
-  bottom: 30px;
+  bottom: 40px;
   right: -60px;
   border-radius: 50%;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   z-index: 5000;
 }
 .toTop .i1{
