@@ -181,6 +181,7 @@ padding: 15px 0;
     box-shadow: 0 0 3px 0px black;
     border-top: solid 5px transparent;
     border-bottom: solid  5px transparent;
+    border-radius: 5px;
 }
 /* .our-work .box::before{
     content: "";
@@ -227,8 +228,8 @@ padding: 15px 0;
 /* end our-work */
 /* start our skills */
 .skills {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
   
   .skills h2 {

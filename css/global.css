@@ -8,11 +8,11 @@
 /* start global style 2222*/
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: sans-serif;
-  scroll-behavior: smooth;
 }
 
 ul {
