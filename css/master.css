@@ -1,11 +1,13 @@
 /* root */
 :root {
-    --main-color:white;
-    --altrnat-color:black;
+    --main-color: white;
+    --altrnat-color: black;
 }
+
 body {
     scroll-behavior: smooth;
 }
+
 /* root */
 /* start landing */
 .landing {
@@ -16,6 +18,7 @@ body {
     z-index: -2;
     transform: skewy(6deg) rotatex(30deg);
 }
+
 .overlay {
     width: 100%;
     height: 100%;
@@ -23,32 +26,38 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #0000005e; 
-    border-top: solid black; border-bottom: solid black;
-    
+    background-color: #0000005e;
+    border-top: solid black;
+    border-bottom: solid black;
+
 }
-.landing .container{
+
+.landing .container {
     display: flex;
     align-items: center;
     height: 100%;
 }
-.landing .text{
+
+.landing .text {
     width: 60%;
     height: 50%;
     padding: 150px 0 0;
 }
-.landing h2{
+
+.landing h2 {
     font-size: 30px;
     margin: 0;
     color: white;
 }
-.landing p{
+
+.landing p {
 
     font-size: 1.4rem;
     color: #e7e7e7;
 
 }
-.landing img{
+
+.landing img {
     width: 50%;
     height: 50%;
     border-radius: 15px;
@@ -56,17 +65,20 @@ body {
     animation-duration: 1.3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
+    animation-direction: alternate-reverse;
 }
+
 /* animation */
-@keyframes landing-img{
+@keyframes landing-img {
     0% {
         margin-top: -60px;
     }
+
     100% {
         margin-top: 60px;
     }
 }
+
 /* animation */
 /* media */
 @media(max-width:992px) {
@@ -74,26 +86,31 @@ body {
         transform: skewy(4deg);
 
     }
-    .landing .text{
+
+    .landing .text {
         width: 100%;
         height: 50%;
         padding: 100px 0 0;
     }
-    .landing h2{
+
+    .landing h2 {
         font-size: 2rem;
         margin: 0;
         color: white;
     }
-    .landing p{
-    
+
+    .landing p {
+
         font-size: 1.2rem;
         color: #e7e7e7;
-    
+
     }
-    .landing  img{
+
+    .landing img {
         display: none;
     }
 }
+
 /* media */
 /* end landing */
 /* start about */
@@ -101,53 +118,64 @@ body {
     width: 100%;
     height: 100vh;
 }
-.about .container{
+
+.about .container {
     display: flex;
     align-items: center;
     height: 100%;
 }
-.about .title{
-text-align: center;
-font-size: 2rem;
+
+.about .title {
+    text-align: center;
+    font-size: 2rem;
 }
-.about .title h2{
+
+.about .title h2 {
     margin: 100px 0 0;
 }
-.about img{
-    width: 40%; height: 50%;
+
+.about img {
+    width: 40%;
+    height: 50%;
 }
-.about .text{
+
+.about .text {
     width: 60%;
     min-height: 50%;
     padding: 150px 0 0 70px;
 
 }
-.about .text p{
 
-padding: 15px;
-font-size: 1.4rem;
-color: #000000;
-line-height: 1.7;
-margin: 0;
-padding: 15px 0;
+.about .text p {
+
+    padding: 15px;
+    font-size: 1.4rem;
+    color: #000000;
+    line-height: 1.7;
+    margin: 0;
+    padding: 15px 0;
 }
+
 /* media */
 @media(max-width:992px) {
 
-    .about .container{
+    .about .container {
         flex-direction: column;
     }
-    .about .text{
+
+    .about .text {
         width: 100%;
         min-height: 40%;
         padding: 0;
         text-align: center;
     }
-    .about img{
+
+    .about img {
         width: 100%;
         height: 50%;
     }
 }
+
 /* media */
 /* end about */
 /* start our-work */
@@ -157,22 +185,26 @@ padding: 15px 0;
     padding: 50px 0;
     background-color: #eee;
 }
-.our-work .title{
+
+.our-work .title {
     text-align: center;
     font-size: 2rem;
     margin: 0;
 }
-.our-work .container{
+
+.our-work .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
-    
+
 }
-.our-work .box img{
+
+.our-work .box img {
     width: 100%;
-    
+
 }
-.our-work .box{
+
+.our-work .box {
     width: 100%;
     background-color: #eee;
     transition-duration: 0.7s;
@@ -180,9 +212,10 @@ padding: 15px 0;
     position: relative;
     box-shadow: 0 0 3px 0px black;
     border-top: solid 5px transparent;
-    border-bottom: solid  5px transparent;
+    border-bottom: solid 5px transparent;
     border-radius: 5px;
 }
+
 /* .our-work .box::before{
     content: "";
     position: absolute;
@@ -201,61 +234,66 @@ padding: 15px 0;
     border-bottom: solid 5px black;
 
 }
-.our-work .box h3{
+
+.our-work .box h3 {
     font-size: 1.6rem;
     margin: 0;
     padding: 10px;
-    
+
 }
-.our-work .box p{
+
+.our-work .box p {
     font-size: 1.1rem;
     margin: 0;
     padding: 10px;
-    color: #6d6d6d ;
+    color: #6d6d6d;
 }
+
 /* media */
 @media(max-width:992px) {
     .our-work .box {
         text-align: center;
         margin-bottom: 40px;
     }
-    .our-work .box img{
+
+    .our-work .box img {
         height: 70%;
-        
+
     }
 }
+
 /* media */
 /* end our-work */
 /* start our skills */
 .skills {
     padding-top: 150px;
     padding-bottom: 150px;
-  }
-  
-  .skills h2 {
+}
+
+.skills h2 {
     font-weight: bold;
     font-size: 2.5rem;
     color: var(--color-main);
     margin: 0 0 50px;
     text-align: center;
-  }
-  
-  .skills .skill-box {
+}
+
+.skills .skill-box {
     background-color: white;
     display: flex;
     padding: 15px;
     margin-bottom: 15px;
-  }
-  
-  .skills .skill-box .skill-name {
+}
+
+.skills .skill-box .skill-name {
     font-weight: bold;
     width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .skills .skill-box .skill-progress {
+}
+
+.skills .skill-box .skill-progress {
     width: calc(100% - 110px);
     margin-right: 10px;
     height: 30px;
@@ -263,9 +301,9 @@ padding: 15px 0;
     border-radius: 7px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .skills .skill-box .skill-progress span {
+}
+
+.skills .skill-box .skill-progress span {
     position: absolute;
     top: 0;
     left: 0;
@@ -273,6 +311,25 @@ padding: 15px 0;
     height: 100%;
     background-color: var(--altrnat-color);
     transition: .7s;
-  }
-  
-  /* end our skills */
+}
+
+/* start media */
+@media(max-width:767px) {
+    .skills .skill-box {
+        flex-direction: column;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .skills .skill-box .skill-name {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .skills .skill-box .skill-progress {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* end media */
+
+/* end our skills */
